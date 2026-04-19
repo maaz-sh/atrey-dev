@@ -1,0 +1,66 @@
+# === Node.js ===
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.pnpm-store/
+
+# Build output
+dist/
+build/
+out/
+.next/
+.nuxt/
+.output/
+
+# Environment variables (never commit secrets)
+.env
+.env.local
+.env.*.local
+
+# === Python ===
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+.venv/
+venv/
+env/
+*.egg-info/
+dist/
+.eggs/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+htmlcov/
+.coverage
+*.cover
+
+# === OS files ===
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+desktop.ini
+
+# === Editor / IDE ===
+.vscode/settings.json
+.idea/
+*.swp
+*.swo
+*~
+
+# Keep VS Code extension and launch config, but not personal settings
+!.vscode/extensions.json
+!.vscode/launch.json
+
+# === Logs ===
+logs/
+*.log
+
+# === Misc ===
+.cache/
+tmp/
+temp/

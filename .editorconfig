@@ -1,0 +1,27 @@
+# Root of project
+root = true
+
+# Default settings for all files
+[*]
+charset = utf-8
+indent_style = space
+indent_size = 2
+end_of_line = lf
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+# Markdown — preserve trailing spaces (used for line breaks)
+[*.md]
+trim_trailing_whitespace = false
+
+# Makefiles require tabs
+[Makefile]
+indent_style = tab
+
+# Python — PEP 8 uses 4 spaces
+[*.py]
+indent_size = 4
+
+# Shell scripts
+[*.sh]
+indent_size = 2
