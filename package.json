@@ -1,0 +1,26 @@
+{
+  "name": "atrey-dev",
+  "version": "0.1.0",
+  "description": "Personal development workspace",
+  "private": true,
+  "engines": {
+    "node": ">=20",
+    "pnpm": ">=9"
+  },
+  "scripts": {
+    "dev": "echo \"No dev server configured yet. Add one here.\"",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "lint": "eslint . --ext .js,.ts,.jsx,.tsx"
+  },
+  "devDependencies": {
+    "eslint": "^9.0.0",
+    "prettier": "^3.0.0"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "semi": true,
+    "trailingComma": "es5",
+    "printWidth": 100
+  }
+}
