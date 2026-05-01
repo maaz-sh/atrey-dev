@@ -1,51 +1,12 @@
 # atrey-dev
 
-My personal development workspace — built for GitHub Codespaces.
+My personal development workspace.
 
 ---
 
 ## What is this repo?
 
-`atrey-dev` is a portable coding workspace I can open in GitHub Codespaces and immediately start working in. It comes pre-configured with a development container (devcontainer) that installs the tools and VS Code extensions I need automatically.
-
-Think of it as my base camp for learning and building with modern AI-assisted development workflows.
-
----
-
-## What is a devcontainer?
-
-A **devcontainer** (development container) is a Docker-based environment defined in code. Instead of manually installing tools on your machine, you describe everything your workspace needs in a `.devcontainer/devcontainer.json` file. When you open the project, the container is built automatically and you get a consistent, reproducible environment every time.
-
-No more "works on my machine" problems. The environment travels with the repo.
-
----
-
-## What is a GitHub Codespace?
-
-A **GitHub Codespace** is a cloud-hosted development environment provided by GitHub. When you open a Codespace, GitHub spins up a virtual machine in the cloud, builds your devcontainer, and gives you a full VS Code editor in your browser (or connected via your local VS Code).
-
-You get a real Linux machine with a real terminal, your real tools, and your real editor — accessible from any device with a browser.
-
----
-
-## How to open this repo in a Codespace
-
-1. Go to this repository on GitHub
-2. Click the green **Code** button
-3. Select the **Codespaces** tab
-4. Click **Create codespace on main** (or your current branch)
-
-GitHub will build the container (takes ~2–3 minutes the first time) and open VS Code in your browser. After the first build, subsequent starts are much faster.
-
----
-
-## How to rebuild the container
-
-If you change `.devcontainer/devcontainer.json` or need a fresh environment:
-
-1. Open the Command Palette: `Ctrl+Shift+P` (or `Cmd+Shift+P` on Mac)
-2. Type: `Codespaces: Rebuild Container`
-3. Press Enter and wait for the rebuild to complete
+`atrey-dev` is a coding workspace for learning and building with modern AI-assisted development workflows.
 
 ---
 
@@ -123,8 +84,6 @@ gh repo view
 
 ```
 atrey-dev/
-├── .devcontainer/
-│   └── devcontainer.json   # Container definition (tools + extensions)
 ├── .editorconfig           # Consistent editor settings across tools
 ├── .gitignore              # Files to exclude from git
 ├── Makefile                # Helpful project commands
@@ -137,7 +96,5 @@ atrey-dev/
 
 ## Notes
 
-- This workspace uses **zsh** as the default shell inside the container.
 - `pnpm` is the preferred Node package manager (faster than npm, uses less disk space).
 - `pipx` is preferred for installing Python CLI tools (keeps them isolated).
-- The container is based on a stable Ubuntu LTS image.
